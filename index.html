@@ -38,7 +38,7 @@
 						<header>
 							<h2>introduction</h2>
 							<ul class="actions">
-								<li><a href="#content" class="arrow scrolly"><span class="label">Next</span></a></li>
+								
 							</ul>
 						</header>
 						<div class="content">
@@ -149,47 +149,157 @@
 										  }
 										}
 										</script>
-<div> </div>
-
-						
-
-							<ul class="feature-icons">
-								<li class="icon solid fa-laptop">Consequat tempus</li>
-								<li class="icon solid fa-bolt">Etiam adipiscing</li>
-								<li class="icon solid fa-signal">Libero nullam</li>
-								<li class="icon solid fa-cog">Blandit condimentum</li>
-								<li class="icon solid fa-map-marker-alt">Lorem ipsum dolor</li>
-								<li class="icon solid fa-code">Nibh amet venenatis</li>
-							</ul>
-							<p>Vehicula ultrices sed ultricies condimentum. Magna sed etiam consequat, et lorem adipiscing sed nulla. Volutpat nisl et tempus et dolor libero, feugiat magna tempus, sed et lorem adipiscing.</p>
+                                
+								
 						</div>
 					</section>
-
+                <!-- Section -->
+					<section>
+						<header>
+							<h2>Flowchart</h2>
+						</header>
+						<div class="content">
+							<p><strong>Flowchart(ผังงาน)</strong></p>
+							<p>Flowchart เป็นการเขียนภาพแสดงลำดับขั้นตอนการทำงานของผังงานในลักษณะของสัญลักษณ์ แทนความหมายของการทำงานที่แตกต่างกัน ซึ่งคนสามารถเรียนรู้และเข้าใจได้ง่ายเพราะผังงานไม่ขึ้นอยู่กับภาษาคอมพิวเตอร์ภาษาใดภาษาหนึ่งโดยเฉพาะ 
+								และเนื่องจากผังงานเป็นการสื่อความหมายด้วยภาพทำให้ง่ายและสะดวกต่อการพิจารณาถึงลำดับขั้นตอนการทำงาน ตรวจสอบความถูกต้องของลำดับขั้นตอนได้ง่าย </p>
+							<p><strong>ประโยชน์ของผังงาน</strong></p>
+							<p>ช่วยลำดับขั้นตอนการทำงานของโปรแกรม และสามารถนำไปเขียนโปรแกรมได้โดยไม่สับสน<br>
+							
+								ช่วยในการตรวจสอบ และแก้ไขโปรแกรมได้ง่าย เมื่อเกิดข้อผิดพลาด<br>
+								
+								ช่วยให้การดัดแปลง แก้ไข ทำได้อย่างสะดวกและรวดเร็ว<br>
+								
+								ช่วยให้ผู้อื่นสามารถศึกษาการทำงานของโปรแกรมได้อย่างง่าย และรวดเร็วมากขึ้น<br></p>
+							<p><strong>ประเภทของ Flowchart แบ่งได้ 2 แบบ คือ </strong></p>
+							
+								<p>ผังงานระบบ (System Flowchart) คือผังงานที่แสดงขั้นตอนการทำงานในระบบอย่างกว้างๆ<br>
+								
+								ผังงานโปรแกรม (Program Flowchart) คือ ผังงานที่แสดงถึงขั้นตอนในการทำงานของโปรแกรม ตั้งแต่รับข้อมูลคำนวณ จนถึงแสดงผลลัพธ์<br>ตัวอย่าง Flowchart<span id="do1ts">...</span><span id="mor1e">
+									<span class="image main"><img src="images/Capture (1).PNG" alt="" /></span>
+									<span class="image main"><img src="images/21.gif" alt="" /></span>
+							</span></p>
+							<button onclick="my1Function()" id="myB1tn">Read more</button>
+							
+							<script>
+							function my1Function() {
+							  var dots = document.getElementById("do1ts");
+							  var moreText = document.getElementById("mor1e");
+							  var btnText = document.getElementById("myB1tn");
+							
+							  if (dots.style.display === "none") {
+								dots.style.display = "inline";
+								btnText.innerHTML = "Read more"; 
+								moreText.style.display = "none";
+							  } else {
+								dots.style.display = "none";
+								btnText.innerHTML = "Read less"; 
+								moreText.style.display = "inline";
+							  }
+							}
+							</script>
+						</div>
+					</section>
 				<!-- Section -->
 					<section>
 						<header>
-							<h2>Ultrices erat magna sed condimentum</h2>
+						<span class="image main"><img src="images/draw-io-screenshot-951v2e5njx8e10br.png" alt="" /></span>
 						</header>
 						<div class="content">
-							<p><strong>Integer mollis egestas</strong> nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+							<p><strong>draw.io เครื่องมือสร้าง diagram</strong>ในการวางแผนงานต่าง หากใช้คำอธิบายอาจจะเข้าใจยาก การที่จะให้สมาชิกหรือทีมงานเข้าใจในขั้นตอนการปฏิบัติงาน โดยส่วนใหญ่จะ
+								อธิบายขั้นตอนเป็นผังงานที่มีการเชื่อมโยง ทำให้มองเห็นกระบวนการหรือขั้นตอนการทำง<span id="dott">...</span><span id="moree">านได้ครบถ้วนและสามารถติดตามได้ ดังนั้นการที่วาดผัง
+								งาน หรือ Diagram ในคอมพิวเตอร์ ซึ่งเดิมจะวาดจากโปรแกรมต่างๆ เช่น Visio หรือบางคนทำจาก โปรแกรมให้กลุ่ม Microsoft ซึ่งต้องมีการติดตั้ง
+								โปรแกรม และอาจจะค่าใช้จ่ายของลิขสิทธิ์โปรแกรม <br>
+								Draw.io เป็นเว็บไซด์ หรือ URL ที่สามารถใช้งานโดยไม่ต้องติดตั้งโปรแกรม และยังสามารถที่จะเก็บข้อมูลบน Cloud ได้ทำให้สามารถใช้
+								งานได้ทุกที่ที่มีอินเทอร์เน็ตไม่ต้องกังวลกับสื่อที่ใช้เก็บข้อมูล Draw.io สามารถใช้งานได้โดยไม่มีค่าใช้จ่ายในระดับบุคคล แต่หากเป็นองค์กรขนาด
+								ใหญ่จะมีการเรียกเก็บค่าใช้จ่าย<span class="image main"><img src="images/Capture12.PNG" alt="" /></span></p>
+							
+								
+							
+							
+							
+							</span></p><button onclick="myFunction1()" id="myBtnn">Read more</button>	
+										
+								<script>
+								function myFunction1() {
+								  var dots = document.getElementById("dott");
+								  var moreText = document.getElementById("moree");
+								  var btnText = document.getElementById("myBtnn");
+								
+								  if (dots.style.display === "none") {
+									dots.style.display = "inline";
+									btnText.innerHTML = "Read more"; 
+									moreText.style.display = "none";
+								  } else {
+									dots.style.display = "none";
+									btnText.innerHTML = "Read less"; 
+									moreText.style.display = "inline";
+								  }
+								}
+								</script>
 
 							<!-- Section -->
-								<section>
-									<header>
-										<h3>Erat aliquam</h3>
-										<p>Vehicula ultrices dolor amet ultricies et condimentum. Magna sed etiam consequat, et lorem adipiscing sed dolor sit amet, consectetur amet do eiusmod tempor incididunt  ipsum suspendisse ultrices gravida.</p>
-									</header>
-									<div class="content">
-										<div class="gallery">
-											<a href="images/gallery/fulls/01.jpg" class="landscape"><img src="images/gallery/thumbs/01.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/02.jpg"><img src="images/gallery/thumbs/02.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/03.jpg"><img src="images/gallery/thumbs/03.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/04.jpg" class="landscape"><img src="images/gallery/thumbs/04.jpg" alt="" /></a>
-										</div>
+							<section>
+								<header>
+									<h2>IF<br>
+										IF-ELSE<br>
+										IF-ELIF-ELSE<br></h2>
+										<p><strong>ตัวอย่างการใช้งานคำสั่งเลือกเงื่อนไขในภาษา Python</strong>
+											หลังจากที่คุณได้เรียนในคำสั่งเลือกเงื่อนไขประเภทต่างๆ ในภาษา Python ไปแล้ว ต่อไปจะเป็นการนำมาประยุกต์เขียนโปรแกรมเพื่อบอกเวลาในรูปแบบของ "เวลาที่ผ่านไป" ซึ่งการแสดงเวลาในรูปแบบนี้ สามารถทำให้ทราบว่าเวลาที่เกิดขึ้นในอดีตผ่านไปนานเท่าไหร่แล้ว ซึ่งมีการใช้งานเป็นจำนวนมากในเว็บไซต์ประเภทต่างๆ เช่น Facebook Twitter เป็นต้น นี่เป็นโค้ดของโปรแกรม
+											<span class="image main"><img src="images/ex-else.PNG" alt="" /></span>
+											<span class="image main"><img src="images/ex-if.PNG" alt="" /></span>
+											</p>
+								</header>
+								<div class="content">
+									<p><strong>DECISION STRUCTURE if, if elif,if else  </strong>
+										คำสั่ง if เป็นคำสั่งที่ใช้ควบคุมการทำงานของโปรแกรมที่เป็นพื้นฐานและง่ายที่สุด เราใช้คำสั่ง if เพื่อสร้างเงื่อนไขให้โปรแกรมทำงานตามที่เราต้องการเมื่อเงื่อนไขนั้นตรงกับที่เร<span id="do">...</span><span id="mo">ากำหนด เช่น การตรวจสอบค่าในตัว
+										แปรกับตัวดำเนินการประเภทต่างๆ นี่เป็นรูปแบบของการใช้งานคำสั่ง if ในภาษา Pythonการใช้งานคำสั่ง if และ expression เป็นเงื่อนไขที่สร้างจากตัวดำเนินการประเภทต่างๆ ที่เป็น boolean expression โดยโปรแกรมจะทำงานในบล็อคคำสั่ง if ถ้าหากเงื่อนไขเป็น True ไม่เช่นนั้นโปรแกรมจะข้ามการทำงานไป 
+										ในบล็อคของคำสั่ง if จะประกอบไปด้วยคำสั่งการทำงานของโปรแกรม คำสั่งทั้งหมดในบล็อคต้องมีระยะเว้นช่องว่างที่เท่ากัน ต่อไปมาดูตัวอย่างการใช้งานคำสั่ง if ในภาษา Python<span class="image main"><img src="images/if.PNG" alt="" /></span>ในตัวอย่าง เป็นการใช้งานคำสั่ง if เพื่อกำหนดให้โปรแกรมทำงานตามเงื่อนไขต่างๆ ในบล็อคแรกเป็นการตรวจสอบค่าในตัวแปร n ว่าเท่ากับ 10 หรือไม่ เนื่องจากค่าในตัวแปรนั้นเท่ากับ 10 ทำให้เงื่อนเป็นจริง และโปรแกรมทำงานในบล็อคของคำสั่ง if และต่อมาเรามีตัวแปร boolean logged_in เก็บค่าสถานะการเข้าสู่ระบบ เราได้ทำการตรวจสอบโดยการใช้ตัวดำเนินการ not สำหรับตรวจสอบว่าถ้าหากผู้ใช้ไม่เข้าสู่ระบบ จะแสดงข้อความบอกว่าต้องเข้าระบบก่อนที่จะใช้งาน
+									<br><strong>คำสั่ง if else</strong></br>หลังจากที่คุณได้รู้จักกับคำสั่ง if ไปแล้ว อีกคำสั่งหนึ่งที่ทำงานควบคู่กับคำสั่ง if คือคำสั่ง else clause โดยโปรแกรมจะทำงานในคำสั่ง else ถ้าหากเงื่อนไขในคำสั่ง if นั้นไม่เป็นจริง กล่าวอีกนัยหนึ่ง มันจะทำงานเมื่อเงื่อนไขก่อนหน้านั้นไม่เป็นจริงหรือเป็นเงื่อนไข Default มาดูตัวอย่างการใช้งาน if else ในภาษา Python<span class="image main"><img src="images/elif.PNG" alt="" /></span>ในตัวอย่าง เป็นโปรแกรมเพื่อทดสอบการทำงานของคำสั่ง else เราได้เพิ่มบล็อคของคำสั่ง else เข้ามาหลังจากคำสั่ง if ซึ่งโค้ดในบล็อคของคำสัง else จะทำงาน ถ้าหากเงื่อนไขใน if ไม่เป็นจริง นั่นหมายถึงโปรแกรมของเราสามารถทำงานได้เพียงหนึ่งทางเลือกเท่านั้น
+								    <br><strong>คำสั่ง if elif</strong></br>คำสั่ง elif นั้นเป็นคำสั่งที่ใช้สำหรับสร้างเงื่อนไขแบบหลายทางเลือกให้กับโปรแกรมที่มีการทำงานเช่นเดียวกับ switch case ในภาษาอื่นๆ คำสั่ง elif นั้นต้องใช้หลังจากคำสั่ง if เสมอและสามารถมี else ได้ในเงื่อนไขสุดท้าย มาดูตัวอย่างการใช้งานคำสั่ง elif ในภาษา Python<span class="image main"><img src="images/else.PNG" alt="" /></span>ในตัวอย่าง เป็นโปรแกรมจำลองในการเลือกโหมดของการเล่นเกม เราได้ให้ผู้ใช้กรอกค่าระหว่าง 1 -4 เพื่อใช้ในการเปรียบเทียบกับระดับความยากของเกม โดยที่ 1 เป็นระดับที่ง่ายที่สุด และ 4 นั้นเป็นระดับที่ยากที่สุด คุณจะเห็นว่าเราได้ให้คำสั่ง elif เพราะเรามีเงื่อนไข 4 แบบ และคำสั่ง else ในการณีที่ตัวเลขที่ผู้เล่นกรอกเข้ามานั้นไม่ตรงกับเงื่อนไขใดๆ ก่อนหน้าเลย
+										<span class="image main"><img src="images/elif2.PNG" alt="" /></span>นี่เป็นผลลัพธ์การทำงานของโปรแกรมเมื่อเรากรอก 4 และ 7 ตามลำดับ เมื่อเรากรอก 4 นั้นโปรแกรมตรงกับเงื่อนไขของ elif ที่ level == 4 และเมื่อเรากรอก 7 โปรแกรมไม่ตรงกับเงื่อนไขใดๆ เลยทำให้ทำงานในบล็อคของคำสั่ง else</p>	
+								
+									
+									</p></span></p><button onclick="myFunction555()" id="myB">Read more</button>	
+										
+							<script>
+							function myFunction555() {
+							  var dots = document.getElementById("do");
+							  var moreText = document.getElementById("mo");
+							  var btnText = document.getElementById("myB");
+							
+							  if (dots.style.display === "none") {
+								dots.style.display = "inline";
+								btnText.innerHTML = "Read more"; 
+								moreText.style.display = "none";
+							  } else {
+								dots.style.display = "none";
+								btnText.innerHTML = "Read less"; 
+								moreText.style.display = "inline";
+							  }
+							}
+							</script>	
 									</div>
 								</section>
 
-							<!-- Section -->
+                                        <!-- Section -->
+				<section>
+					<header>
+						<h2>REPETITION WHILE FOR</h2>
+					</header>
+					<div class="content">
+						<p><strong>คำสั่งวนซ้ำ</strong> ในบทนี้ คุณจะได้เรียนรู้คำสั่งวนซ้ำในภาษา Python เราจะพูดถึงการควบคุมการทำงานโดยการใช้คำสั่ง while loop และ for loop คำสั่งเหล่านี้สามารถควบคุมโปรแกรมให้ทำงานซ้ำๆ ในเงื่อนไขที่กำหนดและเพิ่มความสามารถของการเขียนโปรแกรม ตัวอย่างของการทำงานซ้ำๆ นั้นพบเห็นได้ทั่วไปในชีวิตประจำวัน เช่น โปรแกรมพยากรณ์สภาพอากาศที่เกิดขึ้นในทุกๆ วัน หรือการไปทำงานของคุณในทุกๆ เช้า เป็นต้น ดังนั้นแนวคิดเหล่านี้จึงถูกนำมาใช้กับการเขียนโปรแกรม</p>
+						<p><strong>คำสั่ง while loop</strong>while loop เป็นคำสั่งวนซ้ำที่ง่ายและพื้นฐานที่สุดในภาษา Python คำสั่ง while loop นั้นใช้ควบคุมโปรแกรมให้ทำงานบางอย่างซ้ำๆ ในขณะที่เงื่อนไขของลูปนั้นยังคงเป็นจริงอยู่ นี่เป็นรูปแบบของการใช้งานคำสั่ง while loop ในภาษา Python รูปแบบการใช้งานคำสั่ง while loop นั้น เราสร้างลูปด้วยคำสั่ง while และตามด้วยการกำหนด expression ซึ่งเป็นเงื่อนไขที่จะให้โปรแกรมทำงาน ซึ่งโปรแกรมจะทำงานจนกว่าเงื่อนไขจะเป็น False และสิ้นสุดการทำงานของลูป</p>
+						
+						<p>ตัวอย่างการใช้งาน loop<br><span class="image main"><img src="images/Loop.PNG" alt="" /></span>ตัวอย่างของโปรแกรมในการแสดงตัวเลขตั้งแต่ 50 จนถึง 0 โดยลดค่าลงมาทีละ 5 และในลูปที่สองเป็นการแสดงลำดับของอนุกรมเลขคณิตจากสูตร 2n + 1 โดย n มีค่าตั้งแต่ 1 ถึง 10<br><span class="image main"><img src="images/ALOOP.PNG" alt="" /></span>นี่เป็นผลลัพธ์การทำงานของโปรแกรมในการใช้ while loop แสดงค่าที่ลดลงและแสดงลำดับของอนุกรมเลขคณิต</p>
+					    <p>นอกจากการใช้งานคำสั่งวนซ้ำกับการแสดงผลแล้ว เรายังสามารถใช้งานเพื่อควบคุมการรับค่าจากผู้ใช้ได้ ต่อไปเป็นตัวอย่างของโปรแกรมในการใช้คำสั่ง while loop เพื่อวนรับค่าจากผู้ใช้ทางคีย์บอร์ดและนำค่าเหล่านั้นมาคำนวณและแสดงผล<span class="image main"><img src="images/inloop.PNG" alt="" /></span>ในตัวอย่าง เป็นโปรแกรมวนอ่านค่าจากผู้ใช้โดยการใช้คำสั่ง while loop เรามีตัวแปร MAX_INPUT สำหรับกำหนดจำนวนของตัวเลขที่ต้องการอ่านค่า ซึ่งโปรแกรมแบ่งออกเป็นสอง loop คือการรับค่าและการแสดงผล</p> 
+					<h3>คำสั่ง for loop</h3>
+				    <p>คำสั่ง for loop เป็นคำสั่งวนซ้ำที่ใช้ควบคุมการทำงานซ้ำๆ ในจำนวนรอบที่แน่นอน ในภาษา Python นั้นคำสั่ง for loop จะแตกต่างจากภาษาอื่นๆ อย่างภาษา C มันมักจะใช้สำหรับการวนอ่านค่าภายในออบเจ็ค เช่น ลิสต์หรือออบเจ็คจากฟังก์ชัน range() เป็นต้น มาดูตัวอย่างการใช้งานคำสั่ง for ในภาษา Python<span class="image main"><img src="images/for.PNG" alt="" /></span>
+					</p>
+					
+					
+					</div>
+				</section>           
+								<!-- Section -->
 								<section>
 									<header>
 										<h3>Nisl consequat</h3>
