@@ -525,7 +525,7 @@
 				<h2>Lecture-04 String</h2>
 			</header>
 			<div class="content">
-				<p><strong>STRING RECAP</strong> ชุดของตัวอักษร เป็นการนำตัวอักษรหลายๆ
+				<p><strong>STRING RECAP</strong><br> ชุดของตัวอักษร เป็นการนำตัวอักษรหลายๆ
 					ตัวมาต่อกันหรือเรียกว่าอาเรย์ของตัวอักษร เช่น 'm','i','n','d','p','h','p' เก็บไว้ในข้อมูลอาเรย์
 					และรวมเป็นข้อมูลชนิดสตริง ซึ่งจะได้ข้อความ
 					'mindphp'เราสามารถนำโอเปอเรเตอร์บางชนิดทั้งทางคณิตศาสตร์และบูลีน รวมถึงฟังก์ชันแบบ Built-in
@@ -552,7 +552,7 @@
 					}
 				</script>
 
-				<p><strong>index Python คือคำสั่งอะไร ใช้ทำอะไร</strong>index Python คือ คำสั่งที่จะคืนค่า (return)
+				<p><strong>index Python คือคำสั่งอะไร ใช้ทำอะไร</strong><br>index Python คือ คำสั่งที่จะคืนค่า (return)
 					ลำดับของข้อมูลที่พบจากข้อมูลที่ค้นหา ตัวอย่างจะใช้คำสั่ง index กับตัวแปรชนิด List เพื่อคืนค่าลำดับ
 					(index) ของข้อมูลที่พบในตัวแปร List สามารถเขียนโปรแกรมได้ดังนี้
 
@@ -573,17 +573,17 @@
 						class="image main"><img src="images/sli6.PNG" alt="" /></span></p>
 
 
-				<p><strong>Format method</strong>จัดรูปแบบข้อความ ด้วยเมธอด format() ใน Python<br>เมธอด format()
+				<p><strong>Format method</strong><br>จัดรูปแบบข้อความ ด้วยเมธอด format() ใน Python<br>เมธอด format()
 					เป็นเมธอดของสตริง ใช้สำหรับจัดรูปแบบการแสดงผลของสตริงที่กำหนด ซึ่งเมื่อจะนำไปแสดงผล ต้องแสดงผลใน
 					placeholder ซึ่งจะถูกกำหนดไว้ภายในเครื่องหมาย curly brackets {} ดังนี้ {price:.2f}
 					<span class="image main"><img src="images/mat.PNG" alt="" /></span>value1, value2… คือ
 					ค่าที่สามารถนำไปจัดรูปแบบและแทรกลงในสตริงได้ สามารถมีได้หลายค่า โดยขั้นด้วยเครื่องหมายคอมมา (,)
 					ซึ่งค่าที่กำหนดนี้อาจเป็นตัวเลข หรือข้อมูลแบบ key=value list หรือข้อมูลชนิดอื่น ๆ ก็ได้
-					<strong>placeholder ตำแหน่งที่จะใช้แสดงค่าที่จะจัดรูปแบบ</strong>placeholder
+					<strong>placeholder ตำแหน่งที่จะใช้แสดงค่าที่จะจัดรูปแบบ</strong><br>placeholder
 					คือตำแหน่งที่เราจะจองไว้สำหรับการแทรกค่าที่นำมาจัดรูปแบบ ซึ่งจะถูกกำกับด้วยเครื่องหมาย {}
 					ซึ่งอาจจะเป็นชื่อตัวแปร เช่น {price} , ตัวและอินเด็กซ์ เช่น {0}, placeholders เปล่า ๆ แบบนี้ {}
 					ก็ได้เช่นกัน
-					<strong>ตัวอย่างการใช้งานเมธอด format() รูปแบบต่าง ๆ</strong><span class="image main"><img
+					<strong>ตัวอย่างการใช้งานเมธอด format() รูปแบบต่าง ๆ</strong><br><span class="image main"><img
 							src="images/mat2.PNG" alt="" /></span>จากตัวอย่าง เราสร้าง placeholder ไว้ในสตริง 2 ตัว คือ
 					{name} และ {age} หลังจากนั้นใช้เมธอด format() เพื่อนำค่าที่ต้องการไปวางใน placeholder ที่เตรียมไว้
 					โดยระบุพารามิเตอร์ 2 ตัว ตามจำนวน placeholder ที่เตรียมไว้ ดังนี้
@@ -595,11 +595,12 @@
 					จะถูกตำไปแทนที่ {0} เพราะเป็น placeholder ลำดับที่ 1 ส่วนพารามิเตอร์ตัวที่ 2 คือ 35 จะถูกนำไปแทนที่
 					{1} ตามลำดับหมายเลขอินเด็กซ์
 					<span class="image main"><img src="images/mat4.PNG" alt="" /></span>
-					<strong>การจัดรูปแบบจุดทศนิยมให้ตัวเลข</strong>เราสามารถจัดรูปแบบการแสดงผลให้กับสตริงใน placeholder
+					<strong>การจัดรูปแบบจุดทศนิยมให้ตัวเลข</strong><br>เราสามารถจัดรูปแบบการแสดงผลให้กับสตริงใน
+					placeholder
 					ได้ เช่น หากต้องการให้แสดงตัวเลขเป็นตัวเลขทศนิยม 2 ตำแหน่ง ให้ใส่เครื่องหมาย : ตามด้วย .
 					ตามด้วยตัวเลขกำหนดทศนิยม ตามด้วยตัอักษร f หลังชื่อ placeholder ซึ่งจะได้ดังนี้ {price:.2f}
 					ดังโค้ดตัวอย่าง<span class="image main"><img src="images/mat5.PNG" alt="" /></span>
-					<strong>len()</strong>len(obj) เป็น built-in function ใช้หาจำนวนที่อยู่ในวัตถุนั้น
+					<strong>len()</strong><br>len(obj) เป็น built-in function ใช้หาจำนวนที่อยู่ในวัตถุนั้น
 					โดยวัตถุนั้นจะเป็น string, tuple, list หรือ range ก็ได้ หรือจะเป็นกลุ่มของข้อมูล เช่น dictionary
 					หรือ set เป็นต้น
 
@@ -608,7 +609,7 @@
 
 					การใช้ len ฟังก์ชั่นค่อนข้างง่าย syntax ของฟังก์ชั่นนี้คือ<span class="image main"><img
 							src="images/len.PNG" alt="" /></span>
-					<strong>Python String Methods</strong>strip,join, replace,upper, lower, split<br>
+					<strong>Python String Methods</strong><br>strip,join, replace,upper, lower, split<br>
 
 					strip()<br>strip method เป็น method ที่เอาไว้ลบช่องว่างก่อนและหลังของ string นะคับ
 					(ภาษาอื่นอาจเรียกว่า trim)<span class="image main"><img src="images/strip.PNG" alt="" /></span>
@@ -623,7 +624,7 @@
 					split()<br>สำหรับ split เป็นการแยกนะคับตามตัวเลย ซึ่งถ้าเรากำหนดคำแยกใน argument
 					มันก็จะแยกเมื่อเจอเครื่องหมายนั้น แต่ถ้าไม่กำหนดอะไรเลย มันจะแยกด้วย space นะคับ เช่น<span
 						class="image main"><img src="images/split.PNG" alt="" /></span>
-					<strong>Python Boolean คือ ตัวแปรที่เก็บค่า True หรือ False</strong>Python Boolean คือ
+					<strong>Python Boolean คือ ตัวแปรที่เก็บค่า True หรือ False</strong><br>Python Boolean คือ
 					ตัวแปรที่มีค่าได้เพียง 2 ค่า คือ จริง (True) หรือ เท็จ (False) สามารถเขียนโปรแกรมได้ดังนี้
 					ตัวอย่าง Python Boolean คือ<span class="image main"><img src="images/boolean.PNG"
 							alt="" /></span><br>
@@ -635,88 +636,340 @@
 						<h2>LECTURE - 05 FUNCTIONS</h2>
 					</header>
 					<div class="content">
-						<p><strong>FUNCTIONS</strong> ในบทนี้ คุณจะได้เรียนรู้เกี่ยวกับฟังก์ชันในภาษา Python เราจะพูดถึงการสร้างและการใช้งานฟังก์ชันในเบื้องต้น และการเรียกใช้งานฟังก์ชันในรูปแบบต่างๆ ที่สำคัญ เช่น Default Argument และ Keyword Augment และมากไปกว่านั้น เราจะแนะนำให้คุณรู้จักกับ built-in ฟังก์ชันในภาษา Python
-							
-							<strong>การสร้างฟังก์ชันในภาษา Python</strong>ฟังก์ชัน (Function) คือส่วนของโค้ดหรือโปรแกรมที่ทำงานเพื่อวัตถุประสงค์บางอย่าง ในภาษา Python คุณสามารถสร้างฟังก์ชันของคุณเองเพื่อให้ทำงานที่ต้องการ ในการเขียนโปรแกรมเรามักจะแยกโค้ดที่มีการทำงานเหมือนๆ กันเป็นฟังก์ชันเอาไว้ และเรียกใช้ฟังก์ชันนั้นซ้ำๆ ซึ่งเป็นแนวคิดของการนำโค้ดกลับมาใช้ใหม่ (Code reuse) นี่เป็นรูปแบบของการประกาศฟังก์ชันในภาษา Python
+						<p><strong>FUNCTIONS</strong><br>ในบทนี้ คุณจะได้เรียนรู้เกี่ยวกับฟังก์ชันในภาษา Python
+							เราจะพูดถึงการสร้างและการใช้งานฟังก์ชันในเบื้องต้น และการเรียกใช้งานฟังก์ชันในรูปแบบต่างๆ
+							ที่สำคัญ เช่น Default Argument และ Keyword Augment และมากไปกว่านั้น
+							เราจะแนะนำให้คุณรู้จักกับ built-in ฟังก์ชันในภาษา Python
+							ฟังก์ชันคือส่วนของโค้ดที่ใช้ซ้ำได้ซึ่งทำหน้าที่ดำเนินการ
+							ฟังก์ชันมีชื่อและเรียกหรือดำเนินการตามชื่อนั้น
+							ฟังก์ชันสามารถยอมรับอาร์กิวเมนต์และส่งคืนข้อมูลได้<br>
+
+							<strong>การสร้างฟังก์ชันในภาษา Python</strong><br>ฟังก์ชัน (Function)
+							คือส่วนของโค้ดหรือโปรแกรมที่ทำงานเพื่อวัตถุประสงค์บางอย่าง ในภาษา Python
+							คุณสามารถสร้างฟังก์ชันของคุณเองเพื่อให้ทำงานที่ต้องการ
+							ในการเขียนโปรแกรมเรามักจะแยกโค้ดที่มีการทำงานเหมือนๆ กันเป็นฟังก์ชันเอาไว้
+							และเรียกใช้ฟังก์ชันนั้นซ้ำๆ ซึ่งเป็นแนวคิดของการนำโค้ดกลับมาใช้ใหม่ (Code reuse)
+							นี่เป็นรูปแบบของการประกาศฟังก์ชันในภาษา Python
 							<span class="image main"><img src="images/def.PNG"
-								alt="" /></span><br>ในรูปแบบของการประกาศฟังก์ชันในภาษา Python นั้นจะใช้คำสั่ง def และหลังจากนั้น function_name เป็นชื่อของฟังก์ชัน และในวงเล็บ () เป็นการกำหนดพารามิเตอร์ของฟังก์ชัน พารามิเตอร์ของฟังก์ชันนั้นสามารถมีจำนวนเท่าไหร่ก็ได้หรือไม่มีก็ได้ และเช่นเดียวกับภาษาอื่นๆ ฟังก์ชันอาจจะมีหรือไม่มีการส่งค่ากลับ สำหรับฟังก์ชันที่ไม่มีการ return ค่ากลับนั้น เรามักจะเรียกว่า โพรซีเยอร์ (Procedure) ต่อไปมาดูตัวอย่างการประกาศและใช้งานฟังก์ชันในภาษา Python
-								<span class="image main"><img src="images/def2.PNG"
-									alt="" /></span>ในตัวอย่าง เราได้สร้างฟังก์ชันจำนวน 3 ฟังก์ชัน ฟังก์ชันแรกมีชื่อว่า hello() เป็นฟังก์ชันสำหรับแสดงข้อความทักทายจากที่ชื่อส่งเข้ามา ฟังก์ชันนี้มีหนึ่งพารามิเตอร์คือ name สำหรับรับชื่อที่ส่งเข้ามาในฟังก์ชัน<span class="image main"><img src="images/defvovel.PNG"
-										alt="" /></span>ต่อมาฟังก์ชัน count_vowel() เป็นฟังก์ชันสำหรับนับจำนวนสระใน String ฟังก์ชันนี้มีหนึ่ง String พารามิเตอร์ ในการทำงานของฟังก์ชันนั้นเราใช้คำสั่ง For loop ในการวนอ่านค่าทีละตัวอักษรเพื่อตรวจสอบว่าเป็นสระหรือไม่ด้วยคำสั่ง in และตัวแปร vowel นั้นใช้สำหรับนับจำนวนสระที่พบใน String ในตอนท้ายเราได้ส่งค่าของจำนวนสระที่นับได้กลับไปด้วยคำสั่ง return
-										<span class="image main"><img src="images/defcount.PNG"
-											alt="" /></span>และฟังกชันสุดท้ายคือฟังก์ชัน area() เป็นฟังก์ชันสำหรับหาพื้นที่ของรูปสี่เหลี่ยมด้านขนาน และฟังก์ชันมีพารามิเตอร์สองตัวสำหรับความกว้างและความยาวของสี่เหลี่ยม และฟังก์ชันทำการ return ผลลัพธ์ที่เป็นพื้นที่กลับไปด้วยคำสั่ง return</p>
-						
+									alt="" /></span><br>ในรูปแบบของการประกาศฟังก์ชันในภาษา Python นั้นจะใช้คำสั่ง def
+							และหลังจากนั้น function_name เป็นชื่อของฟังก์ชัน และในวงเล็บ ()
+							เป็นการกำหนดพารามิเตอร์ของฟังก์ชัน
+							พารามิเตอร์ของฟังก์ชันนั้นสามารถมีจำนวนเท่าไหร่ก็ได้หรือไม่มีก็ได้ และเช่นเดียวกับภาษาอื่นๆ
+							ฟังก์ชันอาจจะมีหรือไม่มีการส่งค่ากลับ สำหรับฟังก์ชันที่ไม่มีการ return ค่ากลับนั้น
+							เรามักจะเรียกว่า โพรซีเยอร์ (Procedure) ต่อไปมาดูตัวอย่างการประกาศและใช้งานฟังก์ชันในภาษา
+							Python
+							<span class="image main"><img src="images/def2.PNG" alt="" /></span>ในตัวอย่าง
+							เราได้สร้างฟังก์ชันจำนวน 3 ฟังก์ชัน ฟังก์ชันแรกมีชื่อว่า hello()
+							เป็นฟังก์ชันสำหรับแสดงข้อความทักทายจากที่ชื่อส่งเข้ามา ฟังก์ชันนี้มีหนึ่งพารามิเตอร์คือ name
+							สำหรับรับชื่อที่ส่งเข้ามาในฟังก์ชัน<span class="image main"><img src="images/defvovel.PNG"
+									alt="" /></span>ต่อมาฟังก์ชัน count_vowel() เป็นฟังก์ชันสำหรับนับจำนวนสระใน String
+							ฟังก์ชันนี้มีหนึ่ง String พารามิเตอร์ ในการทำงานของฟังก์ชันนั้นเราใช้คำสั่ง For loop
+							ในการวนอ่านค่าทีละตัวอักษรเพื่อตรวจสอบว่าเป็นสระหรือไม่ด้วยคำสั่ง in และตัวแปร vowel
+							นั้นใช้สำหรับนับจำนวนสระที่พบใน String
+							ในตอนท้ายเราได้ส่งค่าของจำนวนสระที่นับได้กลับไปด้วยคำสั่ง return
+							<span class="image main"><img src="images/defcount.PNG"
+									alt="" /></span>และฟังกชันสุดท้ายคือฟังก์ชัน area()
+							เป็นฟังก์ชันสำหรับหาพื้นที่ของรูปสี่เหลี่ยมด้านขนาน
+							และฟังก์ชันมีพารามิเตอร์สองตัวสำหรับความกว้างและความยาวของสี่เหลี่ยม และฟังก์ชันทำการ return
+							ผลลัพธ์ที่เป็นพื้นที่กลับไปด้วยคำสั่ง return
+						</p>
+
 					</div>
 				</section>
 
+				<!-- Section -->
+				<section>
+					<header>
+						<h2>LECTURE - 06 FILES AND EXCEPTIONS</h2>
+					</header>
+					<div class="content">
+						<p><strong>FILE INPUT/OUTPUT</strong><br>เพื่อให้โปรแกรมเก็บข้อมูลระหว่างเวลาที่รัน
+							คุณต้องบันทึกข้อมูล
+
+							ข้อมูลจะถูกบันทึกลงในไฟล์ โดยทั่วไปแล้วจะอยู่บนดิสก์คอมพิวเตอร์<br>
+
+							ข้อมูลที่บันทึกไว้สามารถเรียกค้นและใช้งานได้ในภายหลัง
+
+							• "กำลังเขียนข้อมูลไปที่" : บันทึกข้อมูลลงในไฟล์<br>
+
+							• ไฟล์เอาต์พุต: ไฟล์ที่เขียนข้อมูลถึง<br>
+
+							• "การอ่านข้อมูลจาก" : กระบวนการดึงข้อมูลจากไฟล์<br>
+
+							• ไฟล์อินพุต: ไฟล์ที่ใช้อ่านข้อมูล<br><span class="image main"><img src="images/data.PNG"
+									alt="" /></span><span class="image main"><img src="images/rdata.PNG"
+									alt="" /></span>
+							<strong>TYPE OF FILES</strong><br>โดยทั่วไป ไฟล์สองประเภท
+
+							1. ไฟล์ข้อความ: มีข้อมูลที่เข้ารหัสเป็นข้อความ<br>
+
+							2. ไฟล์ไบนารี:
+							มีข้อมูลที่ยังไม่ได้แปลงเป็นข้อความสองวิธีในการเข้าถึงข้อมูลที่จัดเก็บไว้ในไฟล์<br>
+
+							1. การเข้าถึงตามลำดับ: ไฟล์อ่านตามลำดับตั้งแต่ต้นจนจบไม่สามารถข้ามไปข้างหน้าได้<br>
+
+							2. การเข้าถึงโดยตรง: สามารถข้ามไปยังข้อมูลใด ๆ ในไฟล์ได้โดยตรง<br>
+							<strong>FILE</strong><br>มีสามขั้นตอนเสมอที่ต้องทำเมื่อไฟล์ถูกใช้โดยโปรแกรม
+
+							• เปิดไฟล์ - การเปิดไฟล์จะสร้างการเชื่อมต่อระหว่างไฟล์กับโปรแกรม
+
+							การเปิดไฟล์เอาท์พุตมักจะสร้างไฟล์บนดิสก์และอนุญาตให้โปรแกรมทำ
+
+							เขียนข้อมูลลงไป การเปิดไฟล์อินพุตทำให้โปรแกรมสามารถอ่านข้อมูลจากไฟล์ได้
+
+							• ประมวลผลไฟล์ - ในขั้นตอนนี้ ข้อมูลจะถูกเขียนไปยังไฟล์ (หากเป็นไฟล์เอาต์พุต) หรือ read
+
+							จากไฟล์ (หากเป็นไฟล์อินพุต)<br>
+
+							• ปิดไฟล์ - เมื่อโปรแกรมใช้งานไฟล์เสร็จแล้ว ไฟล์จะต้องปิดลง
+
+							การปิดไฟล์จะยกเลิกการเชื่อมต่อไฟล์จากโปรแกรม<br>
+						</p>
+						<strong>Input / Output</strong>
+						<strong>OPEN FILE</strong>
+						<span class="image main"><img src="images/openfile.PNG" alt="" /></span>
+						<span class="image main"><img src="images/filemode.PNG" alt="" /></span>
+						<span class="image main"><img src="images/filewrite.PNG" alt="" /></span>
+						<span class="image main"><img src="images/fileread.PNG" alt="" /></span>
+						<span class="image main"><img src="images/readline.PNG" alt="" /></span>
+						<span class="image main"><img src="images/stripnewline.PNG" alt="" /></span>
+						<span class="image main"><img src="images/writename.PNG" alt="" /></span>
+						<span class="image main"><img src="images/writenum.PNG" alt="" /></span>
+						<span class="image main"><img src="images/readnum.PNG" alt="" /></span>
+						<strong>Using Loop to Process File</strong>
+						<strong>DETECTING END OF FILE</strong>
+						<p>เปิดไฟล์
+							ใช้ readline เพื่ออ่านบรรทัดแรกจากไฟล์ในขณะที่ค่าที่ส่งคืนจาก readline ไม่ใช่สตริงว่าง:
+							ประมวลผลรายการที่เพิ่งอ่านจากไฟล์ ใช้ readline เพื่ออ่านบรรทัดถัดไปจากไฟล์
+							ปิดไฟล์
+						</p>
+						<span class="image main"><img src="images/detect.PNG" alt="" /></span>
+						<span class="image main"><img src="images/writesale.PNG" alt="" /></span>
+						<span class="image main"><img src="images/readsale.PNG" alt="" /></span>
+						<span class="image main"><img src="images/readsale2.PNG" alt="" /></span>
+						<strong>Processing Record</strong>
+						<p>• บันทึก: ชุดข้อมูลที่อธิบายหนึ่งรายการ<br>
+
+							• ฟิลด์: ข้อมูลชิ้นเดียวภายในบันทึก<br>
+
+							• เขียนบันทึกไปยังไฟล์เข้าถึงตามลำดับโดยการเขียนฟิลด์ทีละรายการ<br>
+
+							• อ่านบันทึกจากไฟล์เข้าถึงตามลำดับโดยอ่านแต่ละช่องจนกว่าบันทึกจะสมบูรณ์<br>
+							<span class="image main"><img src="images/record.PNG" alt="" /></span>
+							เมื่อทำงานกับเรกคอร์ด สิ่งสำคัญคือต้องสามารถ:
+							• เพิ่มบันทึก<br>
+
+							• แสดงบันทึก<br>
+
+							• ค้นหาบันทึกเฉพาะ<br>
+
+							• แก้ไขบันทึก<br>
+
+							• ลบบันทึก<br>
+						</p>
+						<span class="image main"><img src="images/saverecord.PNG" alt="" /></span>
+						<strong>Exceptions</strong>
+						<span class="image main"><img src="images/grosspay.PNG" alt="" /></span>
+						<p>• ข้อยกเว้น: ข้อผิดพลาดที่เกิดขึ้นขณะโปรแกรมกำลังทำงาน
+
+							มักจะทำให้โปรแกรมหยุดกะทันหัน
+
+							• Traceback: ข้อความแสดงข้อผิดพลาดที่ให้ข้อมูลเกี่ยวกับ<br>
+
+							หมายเลขบรรทัดที่ทำให้เกิดข้อยกเว้น
+
+							1)ระบุประเภทของข้อยกเว้นและคำอธิบายโดยย่อของ<br>
+
+							2)ข้อผิดพลาดที่ทำให้เกิดข้อยกเว้นขึ้น<br>
 
 
 
 
+							• ตัวจัดการข้อยกเว้น: รหัสที่ตอบสนองเมื่อมีการยกข้อยกเว้นและป้องกันโปรแกรมจากการแครช<br>
 
+							• ใน Python เขียนเป็นคำสั่ง try/except<br>
 
+							รูปแบบทั่วไป:<br>
+							1.try:<br>
 
+							2.statements<br>
 
+							3.except exceptionName:<br>
 
+							statements<br>
+							• ลอง suite: คำสั่งที่อาจก่อให้เกิดข้อยกเว้น
 
+							• ตัวจัดการ: คำสั่งที่มีอยู่ในยกเว้น block</p>
+						<span class="image main"><img src="images/grosspay2.PNG" alt="" /></span>
+						<p>• ข้อยกเว้นหลายประการสามารถป้องกันได้ด้วยการเข้ารหัสอย่างระมัดระวัง
 
+							ตัวอย่าง: input validation<br>
 
+							มักจะเกี่ยวข้องกับการสร้างการตัดสินใจที่เรียบง่าย
 
+							• ข้อยกเว้นบางประการไม่สามารถหลีกเลี่ยงได้โดยการเข้ารหัสอย่างระมัดระวัง<br>
 
+							ตัวอย่าง<br>
 
+							กำลังพยายามแปลงสตริงที่ไม่ใช่ตัวเลขเป็นจำนวนเต็ม<br>
 
+							พยายามเปิดอ่านไฟล์ที่ไม่มีอยู่
+							<span class="image main"><img src="images/grosspay222.PNG" alt="" /></span>•
+							หากคำสั่งในชุดทดลองทำให้เกิดข้อยกเว้น:<br>
 
+							ข้อยกเว้นที่ระบุไว้ในข้อยกเว้น:<br>
 
+							ตัวจัดการติดตามทันทียกเว้นคำสั่งดำเนินการ<br>
 
+							ต่อโปรแกรมหลังจากลอง/ยกเว้นคำสั่ง<br>
 
+							ข้อยกเว้นอื่นๆ:
 
+							โปรแกรมหยุดทำงานโดยมีข้อความแสดงข้อผิดพลาดในการย้อนกลับ<br>
 
+							• หากไม่มีข้อยกเว้น ตัวจัดการจะถูกข้าม
+						</p>
+						<span class="image main"><img src="images/display.PNG" alt="" /></span>
+						<strong>HANDLING MULTIPLE EXCEPTIONS</strong>
+						<p>• บ่อยครั้งที่โค้ดในชุดทดลองสามารถโยน . ได้มากกว่าหนึ่งประเภท
 
+							ข้อยกเว้น<br>
 
+							ต้องเขียนยกเว้นอนุประโยคสำหรับข้อยกเว้นแต่ละประเภทว่า
 
+							ต้องจัดการ<br>
 
-			</div>
+							• ข้อยกเว้นที่ไม่แสดงรายการข้อยกเว้นเฉพาะจะจัดการกับข้อยกเว้นใด ๆ ที่ยกขึ้นในชุดทดลอง
 
-		</section>
+							ควรจะอยู่ลำดับสุดท้ายในชุดของยกเว้นอนุประโยค</p>
+						<span class="image main"><img src="images/salere.PNG" alt="" /></span>
+						<strong>DISPLAYING AN EXCEPTION'S DEFAULT ERROR MESSAGE</strong>
+						<p>Exception object:วัตถุที่สร้างขึ้นในหน่วยความจำเมื่อมีการโยนข้อยกเว้น
+							มักจะมีข้อความแสดงข้อผิดพลาดเริ่มต้นที่เกี่ยวข้องกับข้อยกเว้น
+							สามารถกำหนด exception object to a variable in an except clause<br>
+							Example: except ValueError as err:<br>
+							สามารถส่งผ่านตัวแปรอ็อบเจ็กต์ข้อยกเว้นไปยังฟังก์ชันการพิมพ์เพื่อแสดงข้อความแสดงข้อผิดพลาดเริ่มต้นได้
+						</p>
+						<span class="image main"><img src="images/groospay3.PNG" alt="" /></span>
+						<strong>THE ELSE CLAUSE</strong>
+						<p> try/except อาจรวมถึงประโยคทางเลือกอื่น ซึ่งปรากฏต่อท้ายประโยคยกเว้นทั้งหมด</p>
+						<ul>
+							<li>สอดคล้องกับลองและยกเว้นข้อ</li>
+							<li>Syntax: คล้ายกับประโยคอื่นในโครงสร้างการตัดสินใจ</li>
+							<li>Else suite:บล็อกของคำสั่งที่ดำเนินการหลังจากคำสั่งในชุดทดลอง
+								เฉพาะในกรณีที่ไม่มีการยกข้อยกเว้น </li>
+							<li>หากยกข้อยกเว้นชุดอื่นจะถูกข้าม</li>
+						</ul>
+						<span class="image main"><img src="images/sale report4.PNG" alt="" /></span>
+						<strong>THE FINALLY CLAUSE</strong>
+						<p>• try/except คำสั่งอาจรวมถึงประโยค finally ตัวเลือกซึ่งปรากฏหลังจากทั้งหมด
 
+							the except clauses<br>
 
-		<!-- Section -->
-		<section>
-			<header>
-				<h3>Nisl consequat</h3>
-				<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam sed facilisis ante interdum
-					congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet mauris. Ut magna
-					finibus nisi nec lacinia ipsum maximus.</p>
-			</header>
-			<div class="content">
-				<div class="gallery">
-					<a href="images/gallery/fulls/05.jpg" class="landscape"><img src="images/gallery/thumbs/05.jpg"
-							alt="" /></a>
-					<a href="images/gallery/fulls/06.jpg"><img src="images/gallery/thumbs/06.jpg" alt="" /></a>
-					<a href="images/gallery/fulls/07.jpg"><img src="images/gallery/thumbs/07.jpg" alt="" /></a>
+							Aligned with try and except clauses
+
+							•General format:<br>
+
+							•finally:
+
+							statements<br>
+
+							Finally suite: block of statements after the finally clause<br>
+
+							•ดำเนินการไม่ว่าจะมีข้อยกเว้นเกิดขึ้นหรือไม่<br>
+
+							•จุดประสงค์คือทำการล้างข้อมูลก่อนออก </p>
+						<span class="image main"><img src="images/try.PNG" alt="" /></span>
+						<span class="image main"><img src="images/tryex.PNG" alt="" /></span>
+					</div>
+				</section>
+
+				<h2>LECTURE - 07 LISTS AND TUPLES</h2>
+				</header>
+				<div class="content">
+					<p><strong>Lists ในภาษา Python</strong> ในบทนี้ คุณจะได้เรียนรู้เกี่ยวกับโครงสร้างข้อมูลแบบ List
+						ในภาษา Python เราจะพูดถึงการสร้างและใช้งาน List ในเบื้องต้น
+						การใช้งานเมธอดและฟังก์ชันเพื่อจัดการข้อมูลภายใน List และการใช้งานคำสั่ง For loop กับ List
+						รวมถึงการ slicing<br>
+						List (ลิสต์) คือโครงสร้างข้อมูลชนิดหนึ่งในภาษา Python ที่ใช้เก็บข้อมูลแบบลำดับ (Sequence) โดยมี
+						Index เป็นตัวระบุตำแหน่งในการเข้าถึงข้อมูล เราสามารถใช้ List
+						เพื่อเก็บข้อมูลจำนวนมากและหลากหลายประเภทในเวลาเดียวกัน List
+						เป็นประเภทข้อมูลที่ใช้อย่างหลากหลายในการเขียนโปรแกรม นอกจากนี้ ในภาษา Python ยังมี built-in
+						function ที่สามารถทำงานกับ List และใน List ออบเจ็คเองก็มีเมธอดต่างๆ
+						เป็นจำนวนมากที่ช่วยอำนวยความสะดวกในการเขียนโปรแกรม
+					
+						<strong>การประกาศและใช้งาน List<strong><br>
+						List นั้นเป็นตัวแปรประเภทหนึ่ง การใช้งานของมันจะเหมือนกับอาเรย์ในภาษาอื่นๆ ในการประกาศ List นั้นข้อมูลของมันจะอยู่ภายในเครื่องหมาย [] และคั่นสมาชิกแต่ละตัวด้วยเครื่องหมายคอมมา , มาดูตัวอย่างการประกาศ List ในภาษา Python	
+						<span class="image main"><img src="images/list.PNG" alt="" /></span>ในตัวอย่าง เราได้สร้างตัวแปร List สามตัวแปร numbers เป็นตัวแปร List ที่มีสมาชิกเป็นตัวเลขจำนวนเต็ม 6 ตัว names เป็น List ของ String ที่สำหรับเก็บชื่อและมี 5 รายชื่อ และสุดท้ายตัวแปร mixed_type เป็น List ที่เก็บข้อมูลประเภทต่างๆ แบบรวมกันในตัวแปรเดียวซึ่งมีสมาชิกทั้งหมด 5 ตัว ซึ่งทั้งหมดนี้เป็นการกำหนดสมาชิกให้กับ List พร้อมกับการประกาศตัวแปร ในภาษา Python เราสามารถกำหนดค่าให้กับ List หลังจากประกาศตัวแปรแล้วได้ มาดูตัวอย่าง
+						<span class="image main"><img src="images/list2.PNG" alt="" /></span>
+					</p>
 				</div>
-			</div>
 		</section>
 
-		<!-- Section -->
-		<section>
-			<header>
-				<h3>Lorem gravida</h3>
-				<p>Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aenean ornare velit lacus,
-					ac varius sed enim lorem ullamcorper dolore. ac varius enim lorem ullamcorper dolore. Proin aliquam
-					facilisis.</p>
-			</header>
-			<div class="content">
-				<div class="gallery">
-					<a href="images/gallery/fulls/08.jpg" class="portrait"><img src="images/gallery/thumbs/08.jpg"
-							alt="" /></a>
-					<a href="images/gallery/fulls/09.jpg" class="portrait"><img src="images/gallery/thumbs/09.jpg"
-							alt="" /></a>
-					<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg"
-							alt="" /></a>
-				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+	</section>
+
+
+	<!-- Section -->
+	<section>
+		<header>
+			<h3>Nisl consequat</h3>
+			<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam sed facilisis ante interdum
+				congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet mauris. Ut magna
+				finibus nisi nec lacinia ipsum maximus.</p>
+		</header>
+		<div class="content">
+			<div class="gallery">
+				<a href="images/gallery/fulls/05.jpg" class="landscape"><img src="images/gallery/thumbs/05.jpg"
+						alt="" /></a>
+				<a href="images/gallery/fulls/06.jpg"><img src="images/gallery/thumbs/06.jpg" alt="" /></a>
+				<a href="images/gallery/fulls/07.jpg"><img src="images/gallery/thumbs/07.jpg" alt="" /></a>
 			</div>
-		</section>
+		</div>
+	</section>
+
+	<!-- Section -->
+	<section>
+		<header>
+			<h3>Lorem gravida</h3>
+			<p>Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aenean ornare velit lacus,
+				ac varius sed enim lorem ullamcorper dolore. ac varius enim lorem ullamcorper dolore. Proin aliquam
+				facilisis.</p>
+		</header>
+		<div class="content">
+			<div class="gallery">
+				<a href="images/gallery/fulls/08.jpg" class="portrait"><img src="images/gallery/thumbs/08.jpg"
+						alt="" /></a>
+				<a href="images/gallery/fulls/09.jpg" class="portrait"><img src="images/gallery/thumbs/09.jpg"
+						alt="" /></a>
+				<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg"
+						alt="" /></a>
+			</div>
+		</div>
+	</section>
 
 	</div>
 	</section>
