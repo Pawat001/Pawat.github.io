@@ -19,6 +19,398 @@
 
     <!-- Wrapper -->
     <div id="wrapper">
+        <!-- Section -->
+        <section>
+            <header>
+                <h2>LECTURE - 05 FUNCTIONS</h2>
+                <style>
+                    #morae {
+                        display: none;
+                    }
+                </style>
+            </header>
+            <div class="content">
+                <p><strong>FUNCTIONS</strong><br>ในบทนี้ คุณจะได้เรียนรู้เกี่ยวกับฟั<span id="dottts">...</span><span
+                        id="morrre">งก์ชันในภาษา Python
+                        เราจะพูดถึงการสร้างและการใช้งานฟังก์ชันในเบื้องต้น และการเรียกใช้งานฟังก์ชันในรูปแบบต่างๆ
+                        ที่สำคัญ เช่น Default Argument และ Keyword Augment และมากไปกว่านั้น
+                        เราจะแนะนำให้คุณรู้จักกับ built-in ฟังก์ชันในภาษา Python
+                        ฟังก์ชันคือส่วนของโค้ดที่ใช้ซ้ำได้ซึ่งทำหน้าที่ดำเนินการ
+                        ฟังก์ชันมีชื่อและเรียกหรือดำเนินการตามชื่อนั้น
+                        ฟังก์ชันสามารถยอมรับอาร์กิวเมนต์และส่งคืนข้อมูลได้<br>
+
+                        <strong>การสร้างฟังก์ชันในภาษา Python</strong><br>ฟังก์ชัน (Function)
+                        คือส่วนของโค้ดหรือโปรแกรมที่ทำงานเพื่อวัตถุประสงค์บางอย่าง ในภาษา Python
+                        คุณสามารถสร้างฟังก์ชันของคุณเองเพื่อให้ทำงานที่ต้องการ
+                        ในการเขียนโปรแกรมเรามักจะแยกโค้ดที่มีการทำงานเหมือนๆ กันเป็นฟังก์ชันเอาไว้
+                        และเรียกใช้ฟังก์ชันนั้นซ้ำๆ ซึ่งเป็นแนวคิดของการนำโค้ดกลับมาใช้ใหม่ (Code reuse)
+                        นี่เป็นรูปแบบของการประกาศฟังก์ชันในภาษา Python
+                        <span class="image main"><img src="images/def.PNG"
+                                alt="" /></span><br>ในรูปแบบของการประกาศฟังก์ชันในภาษา Python นั้นจะใช้คำสั่ง def
+                        และหลังจากนั้น function_name เป็นชื่อของฟังก์ชัน และในวงเล็บ ()
+                        เป็นการกำหนดพารามิเตอร์ของฟังก์ชัน
+                        พารามิเตอร์ของฟังก์ชันนั้นสามารถมีจำนวนเท่าไหร่ก็ได้หรือไม่มีก็ได้ และเช่นเดียวกับภาษาอื่นๆ
+                        ฟังก์ชันอาจจะมีหรือไม่มีการส่งค่ากลับ สำหรับฟังก์ชันที่ไม่มีการ return ค่ากลับนั้น
+                        เรามักจะเรียกว่า โพรซีเยอร์ (Procedure) ต่อไปมาดูตัวอย่างการประกาศและใช้งานฟังก์ชันในภาษา
+                        Python
+                        <span class="image main"><img src="images/def2.PNG" alt="" /></span>ในตัวอย่าง
+                        เราได้สร้างฟังก์ชันจำนวน 3 ฟังก์ชัน ฟังก์ชันแรกมีชื่อว่า hello()
+                        เป็นฟังก์ชันสำหรับแสดงข้อความทักทายจากที่ชื่อส่งเข้ามา ฟังก์ชันนี้มีหนึ่งพารามิเตอร์คือ name
+                        สำหรับรับชื่อที่ส่งเข้ามาในฟังก์ชัน<span class="image main"><img src="images/defvovel.PNG"
+                                alt="" /></span>ต่อมาฟังก์ชัน count_vowel() เป็นฟังก์ชันสำหรับนับจำนวนสระใน String
+                        ฟังก์ชันนี้มีหนึ่ง String พารามิเตอร์ ในการทำงานของฟังก์ชันนั้นเราใช้คำสั่ง For loop
+                        ในการวนอ่านค่าทีละตัวอักษรเพื่อตรวจสอบว่าเป็นสระหรือไม่ด้วยคำสั่ง in และตัวแปร vowel
+                        นั้นใช้สำหรับนับจำนวนสระที่พบใน String
+                        ในตอนท้ายเราได้ส่งค่าของจำนวนสระที่นับได้กลับไปด้วยคำสั่ง return
+                        <span class="image main"><img src="images/defcount.PNG"
+                                alt="" /></span>และฟังกชันสุดท้ายคือฟังก์ชัน
+                        area()
+                        เป็นฟังก์ชันสำหรับหาพื้นที่ของรูปสี่เหลี่ยมด้านขนาน
+                        และฟังก์ชันมีพารามิเตอร์สองตัวสำหรับความกว้างและความยาวของสี่เหลี่ยม และฟังก์ชันทำการ return
+                        ผลลัพธ์ที่เป็นพื้นที่กลับไปด้วยคำสั่ง return
+                        <strong>การเรียกใช้งานฟังก์ชันในภาษา Python</strong><br>
+                        หลังจากเราได้สร้างฟังก์ชันในตัวอย่างก่อนหน้าแล้ว ต่อไปเราจะมาเรียกใช้งานฟังก์ชันเหล่านั้น
+                        ในการเรียกใช้ฟังก์ชันนั้นเราจะใช้ชื่อของฟังก์ชันและส่งอาร์กิวเมนต์ให้สอดคล้องกับพารามิเตอร์ที่กำหนดไว้ในฟังก์ชัน
+                        ดังนั้นอาร์กิวเมนต์คือค่าที่ส่งเข้าไปในฟังก์ชันตอนใช้งาน
+                        ส่วนพารามิเตอร์นั้นคือตัวแปรทีกำหนดไว้ในฟังก์ชันเพื่อรับค่าจากอาร์กิวเมนต์
+                        มาดูตัวอย่างการเรียกใช้งานฟังก์ชันในภาษา Python
+                        <span class="image main"><img src="images/func.PNG" alt="" /></span>ในตัวอย่าง
+                        เป็นการเรียกใช้งานฟังก์ชันที่เราสร้างขึ้น เราได้เรียกใช้ฟังก์ชัน hello()
+                        และส่งอาร์กิวเมนต์ที่เป็น String เข้าไปยังฟังก์ชัน เราเรียกใช้ฟังก์ชันนี้สองครั้ง
+                        ซึ่งนี่เองเป็นการ reuse โค้ดในการเขียนโปรแกรม
+
+                        หลังจากนั้นเราเรียกใช้ฟังก์ชัน count_vowel() และฟังก์ชัน area()
+                        และส่งพารามิเตอร์ที่ถูกต้องไปยังฟังก์ชัน และเพราะว่าฟังก์ชันเหล่านี้มีการ return ค่ากลับ
+                        เราสามารถนำค่าเหล่านี้ไปใช้งานได้ต่อไป เราได้นำไปใช้กับฟังก์ชัน print()
+                        เพื่อจัดรูปแบบการแสดงผล<br>
+                        <span class="image main"><img src="images/func2.PNG" alt="" /></span>
+                        <strong>Default Argument Values</strong><br>
+                        ในภาษา Python เราสามารถสร้างฟังก์ชันโดยการกำหนด Default Argument
+                        ให้กับฟังก์ชันพารามิเตอร์ได้ Default Argument
+                        เป็นการการกำหนดค่าเริ่มต้นให้กับอาร์กิวเมนต์ที่ส่งเข้ามายังฟังก์ชัน
+                        นั่นทำให้เราสามารถเรียกใช้งานฟังก์ชันโดยการส่งอาร์กิวเมนต์น้อยกว่าจำนวนที่กำหนดไว้ในฟังก์ชันได้
+                        ซึ่งอำนวยความสะดวกในการใช้งานมากขึ้น มาดูตัวอย่างการสร้างและใช้งานฟังก์ชันกับ Default
+                        Argument
+                        <span class="image main"><img src="images/show.PNG" alt="" /></span>
+                        ในตัวอย่าง เราได้สร้างฟังก์ชัน show_info() สำหรับแสดงข้อมูลของโปรแกรมเมอร์
+                        ข้อมูลที่จำเป็นต้องการจะแสดงนั้นมีชื่อ เงินเดือน และภาษาที่เขียน ในฟังก์ชันของเรานั้นมี 3
+                        พารามิเตอร์ พารามิเตอร์แรก name นั้นเป็นพารามิเตอร์แบบปกติ และสองพารามิเตอร์นั้นเป็น Default
+                        Argument ซึ่งเรากำหนดค่าเริ่มต้นให้กับพารามิเตอร์โดยใช้เครื่องหมาย =
+                        ในการกำหนดพารามิเตอร์นั้น Default Argument ต้องอยู่หลังพารามิเตอร์แบบปกติเสมอ
+                        <span class="image main"><img src="images/show2.PNG" alt="" /></span>
+                        ในการเรียกใช้งานฟังก์ชันนั้น เราต้องทำการส่งค่าอาร์กิวเมนต์สำหรับพารามิเตอร์แบบปกติเสมอ
+                        ส่วนพารามิเตอร์แบบ Default Argument นั้นเป็นทางเลือก ในตัวอย่าง
+                        คำสั่งเราเรียกใช้ฟังก์ชันโดยอาร์กิวเมนต์เพียงหนึ่งตัวเข้าไป
+                        ทำให้สองอาร์กิวเมนต์ที่เหลือที่เป็น Default Argument ใช้ค่าเริ่มต้นของมันแทน คือ 84360
+                        สำหรับเงินเดือน และ "Python" สำหรับภาษาเขียนโปรแกรม
+
+                        ต่อมาเราเรียกใช้ฟังก์ชันโดยการส่งสองอาร์กิวเมนต์เข้าไป
+                        ทำให้มีเพียงพารามิเตอร์สุดท้ายเท่านั้นที่ใช้ค่าเริ่มต้น
+                        และในคำสั่งสุดท้ายเป็นการส่งค่าครบจำนวนให้กับทุกอาร์กิวเมนต์
+                        <span class="image main"><img src="images/show3.PNG" alt="" /></span>
+                        <strong>Keyword Arguments</strong><br>
+                        ในภาษา Python เราสามารถเรียกใช้งานฟังก์ชันในรูปแบบของ Keyword Argument
+                        โดยการใช้ชื่อของพารามิเตอร์สำหรับส่งอาร์กิวเมนต์ ในการใช้งานนั้น
+                        พารามิเตอร์ต้องมีการกำหนดในรูปแบบของ Default Argument ก่อน มาดูตัวอย่างการใช้งาน Keyword
+                        Arguments ในภาษา Python
+                        <span class="image main"><img src="images/cre.PNG" alt="" /></span>
+                        ในตัวอย่าง เราได้สร้างฟังก์ชันสำหรับการสร้างปุ่ม ในการเรียกใช้งานฟังก์ชันนั้น
+                        เราสามารถเรียกโดยวิธีการส่งแบบ Keyword Argument ได้ในรูปแบบของ argument = value
+                        และสามารถสลับตำแหน่งของอาร์กิวเมนต์ได้ และในฟังก์ชันนั้นเรามีอาร์กิวเมนต์ id
+                        ซึ่งเป็นอาร์กิวเมนต์แบบปกติ สำหรับอาร์กิวเมนต์แบบปกติในการส่งค่านั้นต้องส่งเป็นลำดับแรกเสมอ
+                        เหมือนในคำสั่งการเรียกใช้งานสองคำสั่งแรก หรือสามารถส่งแบบ Keyword Argument
+                        ก็ได้เช่นกันเหมือนในคำสั่งที่สามและสี่
+                        <span class="image main"><img src="images/cre2.PNG" alt="" /></span>
+                        <strong>Lambda Expressions</strong><br>
+                        Lambda Expressions คือ anonymous function
+                        ที่เป็นฟังก์ชันที่มีการทำงานขนาดเล็กอยู่ภายในที่สามารถมีได้เพียง Expression เดียวเท่านั้น
+                        เราสามารถสร้างโดยใช้คำสั่ง lambda เราสามารถใช้ Lambda Expressions สร้างออบเจ็คของฟังก์ชันได้
+                        และค่า return จะเป็นค่าที่ได้จากผลลัพธ์ของ Expression ของฟังก์ชัน มาดูตัวอย่างการใช้งาน
+                        <span class="image main"><img src="images/lambda.PNG" alt="" /></span>
+                        ในตัวอย่าง เราได้สร้าง Lambda Expressions เป็นจำนวนสามฟังก์ชัน
+                        ฟังก์ชันแรกเป็นฟังก์ชันสำหรับเพิ่มตัวเลขขึ้น 1
+                        และฟังก์ชันที่สองเป็นฟังก์ชันสำหรับหาค่าเฉลี่ยของตัวเลขสองจำนวน
+                        คุณจะสังเกตได้ว่าฟังก์ชันแรกนั้นมี 1 อาร์กิวเมนต์และฟังก์ชันที่สองนั้นมี 2 อาร์กิวเมนต์
+                        และฟังก์ชันสุดท้ายนั้นเป็นการ return ฟังก์ชันกลับภายในฟังก์ชันอีกที
+                        และเป็นฟังก์ชันสำหรับเพิ่มตัวเลขขึ้นจำนวน n จากอาร์กิวเมนต์ที่ใส่เข้าไป
+                        <span class="image main"><img src="images/lambda2.PNG" alt="" /></span>
+                        นอกจากนี้ Lambda Expressions ยังมีประโยชน์เพื่อใช้งานกับ built-in function เช่น ฟังก์ชัน
+                        filter() และฟังก์ชัน map() ในภาษา Python มันใช้เป็นอาร์กิวเมนต์ส่งเข้าไปในฟังก์ชัน
+                        เพื่อสร้าง Expression ให้กับฟังก์ชัน มาดูตัวอย่างการใช้งาน
+                        <span class="image main"><img src="images/lambda3.PNG" alt="" /></span>
+                        ในตัวอย่าง เรามีลิสต์ของตัวเลข Integer และเราได้ใช้ฟังก์ชัน filter() และฟังก์ชัน map()
+                        ซึ่งเป็นฟังก์ชันที่มีอาร์กิวเมนต์ตัวแรกเป็นฟังก์ชัน และตัวที่สองเป็นลิสต์
+                        ในการทำงานของฟังก์ชัน filter() เราได้ใช้ฟังก์ชันกรองเอาตัวเลขที่ตรงกันกับ Lambda Expressions
+                        ซึ่งก็คือตัวเลขในลิสต์ที่หารด้วย 5 ลงตัว และในการใช้ฟังก์ชัน map()
+                        เป็นการเชื่อมโยงค่าในลิสต์ให้ตรงกับ Lambda Expressions คือการเพิ่มตัวเลขให้เป็นสองเท่า
+                        ซึ่งทั้งสองฟังก์ชันนี้ส่งค่ากลับเป็นออบเจ็ค และเราใช้ฟังก์ชัน list()
+                        เพื่อแปลงออบเจ็คให้เป็นสิสต์
+                        <span class="image main"><img src="images/lambda4.PNG" alt="" /></span>
+                        <strong>Summary</strong><br>
+                        ในบทนี้ คุณได้เรียนรู้เกี่ยวกับการสร้างและใช้งานฟังก์ชันในภาษา Python
+                        และการเรียกใช้ฟังก์ชันในรูปแบบอื่นๆ เช่น Default Argument และ Keyword Argument
+                        และนอกจากนี้เรายังแนะนำให้คุณรู้จักกับการใช้งาน Lambda Expressions
+                        เพื่อสร้างฟังก์ชันขนาดเล็กแต่ช่วยอำนวยความสะดวกในการทำงานเป็นอย่างมาก
+                        และแนะนำให้คุณรู้จักกับ built-in function</p>
+
+                </span></p>
+                <button onclick="myFunction()" id="myyyBtn">Read more</button>
+
+                <script>
+                    function myFunction() {
+                        var dots = document.getElementById("dottts");
+                        var moreText = document.getElementById("morrre");
+                        var btnText = document.getElementById("myyyBtn");
+
+                        if (dots.style.display === "none") {
+                            dots.style.display = "inline";
+                            btnText.innerHTML = "Read more";
+                            moreText.style.display = "none";
+                        } else {
+                            dots.style.display = "none";
+                            btnText.innerHTML = "Read less";
+                            moreText.style.display = "inline";
+                        }
+                    }
+                </script>
+
+
+
+            </div>
+        </section>
+
+        <!-- Section -->
+        <section>
+            <header>
+                <h2>LECTURE - 06 FILES AND EXCEPTIONS</h2>
+                <style>
+                    #maaaaa {
+                        display: none;
+                    }
+                </style>
+            </header>
+            <div class="content">
+                <p><strong>FILE INPUT/OUTPUT</strong><br>เพื่อให้โปรแกรมเก็บข้อมูลระหว่างเวลาที่รัน
+                    คุณต้องบันทึกข้อมูล
+
+                    ข้อมูลจะถูกบันทึกลงในไฟล์ โดยทั่วไปแล้วจะอยู่บนดิสก์คอมพิวเตอร์<br>
+
+                    ข้อมูลที่บันทึกไว้สามารถเรียกค้นแล<span id="abcd">...</span><span id="efg">ะใช้งานได้ในภายหลัง
+
+                        • "กำลังเขียนข้อมูลไปที่" : บันทึกข้อมูลลงในไฟล์<br>
+
+                        • ไฟล์เอาต์พุต: ไฟล์ที่เขียนข้อมูลถึง<br>
+
+                        • "การอ่านข้อมูลจาก" : กระบวนการดึงข้อมูลจากไฟล์<br>
+
+                        • ไฟล์อินพุต: ไฟล์ที่ใช้อ่านข้อมูล<br><span class="image main"><img src="images/data.PNG"
+                                alt="" /></span>
+                        <span class="image main"><img src="images/rdata.PNG" alt="" /></span>
+                        <strong>TYPE OF FILES</strong><br>โดยทั่วไป ไฟล์สองประเภท
+
+                        1. ไฟล์ข้อความ: มีข้อมูลที่เข้ารหัสเป็นข้อความ<br>
+
+                        2. ไฟล์ไบนารี:
+                        มีข้อมูลที่ยังไม่ได้แปลงเป็นข้อความสองวิธีในการเข้าถึงข้อมูลที่จัดเก็บไว้ในไฟล์<br>
+
+                        1. การเข้าถึงตามลำดับ: ไฟล์อ่านตามลำดับตั้งแต่ต้นจนจบไม่สามารถข้ามไปข้างหน้าได้<br>
+
+                        2. การเข้าถึงโดยตรง: สามารถข้ามไปยังข้อมูลใด ๆ ในไฟล์ได้โดยตรง<br>
+                        <strong>FILE</strong><br>มีสามขั้นตอนเสมอที่ต้องทำเมื่อไฟล์ถูกใช้โดยโปรแกรม
+
+                        • เปิดไฟล์ - การเปิดไฟล์จะสร้างการเชื่อมต่อระหว่างไฟล์กับโปรแกรม
+
+                        การเปิดไฟล์เอาท์พุตมักจะสร้างไฟล์บนดิสก์และอนุญาตให้โปรแกรมทำ
+
+                        เขียนข้อมูลลงไป การเปิดไฟล์อินพุตทำให้โปรแกรมสามารถอ่านข้อมูลจากไฟล์ได้
+
+                        • ประมวลผลไฟล์ - ในขั้นตอนนี้ ข้อมูลจะถูกเขียนไปยังไฟล์ (หากเป็นไฟล์เอาต์พุต) หรือ read
+
+                        จากไฟล์ (หากเป็นไฟล์อินพุต)<br>
+
+                        • ปิดไฟล์ - เมื่อโปรแกรมใช้งานไฟล์เสร็จแล้ว ไฟล์จะต้องปิดลง
+
+                        การปิดไฟล์จะยกเลิกการเชื่อมต่อไฟล์จากโปรแกรม<br>
+
+                        <strong>Input / Output</strong>
+                        <strong>OPEN FILE</strong>
+                        <span class="image main"><img src="images/openfile.PNG" alt="" /></span>
+                        <span class="image main"><img src="images/filemode.PNG" alt="" /></span>
+                        <span class="image main"><img src="images/filewrite.PNG" alt="" /></span>
+                        <span class="image main"><img src="images/fileread.PNG" alt="" /></span>
+                        <span class="image main"><img src="images/readline.PNG" alt="" /></span>
+                        <span class="image main"><img src="images/stripnewline.PNG" alt="" /></span>
+                        <span class="image main"><img src="images/writename.PNG" alt="" /></span>
+                        <span class="image main"><img src="images/writenum.PNG" alt="" /></span>
+                        <span class="image main"><img src="images/readnum.PNG" alt="" /></span>
+                        <strong>Using Loop to Process File</strong>
+                        <strong>DETECTING END OF FILE</strong>
+                        เปิดไฟล์
+                        ใช้ readline เพื่ออ่านบรรทัดแรกจากไฟล์ในขณะที่ค่าที่ส่งคืนจาก readline ไม่ใช่สตริงว่าง:
+                        ประมวลผลรายการที่เพิ่งอ่านจากไฟล์ ใช้ readline เพื่ออ่านบรรทัดถัดไปจากไฟล์
+                        ปิดไฟล์
+
+                        <span class="image main"><img src="images/detect.PNG" alt="" /></span>
+                        <span class="image main"><img src="images/writesale.PNG" alt="" /></span>
+                        <span class="image main"><img src="images/readsale.PNG" alt="" /></span>
+                        <span class="image main"><img src="images/readsale2.PNG" alt="" /></span>
+                        <strong>Processing Record</strong>
+                        • บันทึก: ชุดข้อมูลที่อธิบายหนึ่งรายการ<br>
+
+                        • ฟิลด์: ข้อมูลชิ้นเดียวภายในบันทึก<br>
+
+                        • เขียนบันทึกไปยังไฟล์เข้าถึงตามลำดับโดยการเขียนฟิลด์ทีละรายการ<br>
+
+                        • อ่านบันทึกจากไฟล์เข้าถึงตามลำดับโดยอ่านแต่ละช่องจนกว่าบันทึกจะสมบูรณ์<br>
+                        <span class="image main"><img src="images/record.PNG" alt="" /></span>
+                        เมื่อทำงานกับเรกคอร์ด สิ่งสำคัญคือต้องสามารถ:
+                        • เพิ่มบันทึก<br>
+
+                        • แสดงบันทึก<br>
+
+                        • ค้นหาบันทึกเฉพาะ<br>
+
+                        • แก้ไขบันทึก<br>
+
+                        • ลบบันทึก<br>
+
+                        <span class="image main"><img src="images/saverecord.PNG" alt="" /></span>
+                        <strong>Exceptions</strong>
+                        <span class="image main"><img src="images/grosspay.PNG" alt="" /></span>
+                        • ข้อยกเว้น: ข้อผิดพลาดที่เกิดขึ้นขณะโปรแกรมกำลังทำงาน<br>
+
+                        มักจะทำให้โปรแกรมหยุดกะทันหัน
+
+                        • Traceback: ข้อความแสดงข้อผิดพลาดที่ให้ข้อมูลเกี่ยวกับ<br>
+
+                        หมายเลขบรรทัดที่ทำให้เกิดข้อยกเว้น
+
+                        1)ระบุประเภทของข้อยกเว้นและคำอธิบายโดยย่อของ<br>
+
+                        2)ข้อผิดพลาดที่ทำให้เกิดข้อยกเว้นขึ้น<br>
+
+
+
+
+                        • ตัวจัดการข้อยกเว้น: รหัสที่ตอบสนองเมื่อมีการยกข้อยกเว้นและป้องกันโปรแกรมจากการแครช<br>
+
+                        • ใน Python เขียนเป็นคำสั่ง try/except<br>
+
+                        รูปแบบทั่วไป:<br>
+                        1.try:<br>
+
+                        2.statements<br>
+
+                        3.except exceptionName:<br>
+
+                        statements<br>
+                        • ลอง suite: คำสั่งที่อาจก่อให้เกิดข้อยกเว้น
+
+                        • ตัวจัดการ: คำสั่งที่มีอยู่ในยกเว้น block
+                        <span class="image main"><img src="images/grosspay2.PNG" alt="" /></span>
+                        • ข้อยกเว้นหลายประการสามารถป้องกันได้ด้วยการเข้ารหัสอย่างระมัดระวัง
+
+                        ตัวอย่าง: input validation<br>
+
+                        มักจะเกี่ยวข้องกับการสร้างการตัดสินใจที่เรียบง่าย
+
+                        • ข้อยกเว้นบางประการไม่สามารถหลีกเลี่ยงได้โดยการเข้ารหัสอย่างระมัดระวัง<br>
+
+                        ตัวอย่าง<br>
+
+                        กำลังพยายามแปลงสตริงที่ไม่ใช่ตัวเลขเป็นจำนวนเต็ม<br>
+
+                        พยายามเปิดอ่านไฟล์ที่ไม่มีอยู่
+                        <span class="image main"><img src="images/grosspay222.PNG" alt="" /></span>•
+                        หากคำสั่งในชุดทดลองทำให้เกิดข้อยกเว้น:<br>
+
+                        ข้อยกเว้นที่ระบุไว้ในข้อยกเว้น:<br>
+
+                        ตัวจัดการติดตามทันทียกเว้นคำสั่งดำเนินการ<br>
+
+                        ต่อโปรแกรมหลังจากลอง/ยกเว้นคำสั่ง<br>
+
+                        ข้อยกเว้นอื่นๆ:
+
+                        โปรแกรมหยุดทำงานโดยมีข้อความแสดงข้อผิดพลาดในการย้อนกลับ<br>
+
+                        • หากไม่มีข้อยกเว้น ตัวจัดการจะถูกข้าม
+
+                        <span class="image main"><img src="images/display.PNG" alt="" /></span>
+                        <strong>HANDLING MULTIPLE EXCEPTIONS</strong>
+                        • บ่อยครั้งที่โค้ดในชุดทดลองสามารถโยน . ได้มากกว่าหนึ่งประเภท
+
+                        ข้อยกเว้น<br>
+
+                        ต้องเขียนยกเว้นอนุประโยคสำหรับข้อยกเว้นแต่ละประเภทว่า
+
+                        ต้องจัดการ<br>
+
+                        • ข้อยกเว้นที่ไม่แสดงรายการข้อยกเว้นเฉพาะจะจัดการกับข้อยกเว้นใด ๆ ที่ยกขึ้นในชุดทดลอง
+
+                        ควรจะอยู่ลำดับสุดท้ายในชุดของยกเว้นอนุประโยค
+                        <span class="image main"><img src="images/salere.PNG" alt="" /></span>
+                        <strong>DISPLAYING AN EXCEPTION'S DEFAULT ERROR MESSAGE</strong>
+                        Exception object:วัตถุที่สร้างขึ้นในหน่วยความจำเมื่อมีการโยนข้อยกเว้น
+                        มักจะมีข้อความแสดงข้อผิดพลาดเริ่มต้นที่เกี่ยวข้องกับข้อยกเว้น
+                        สามารถกำหนด exception object to a variable in an except clause<br>
+                        Example: except ValueError as err:<br>
+                        สามารถส่งผ่านตัวแปรอ็อบเจ็กต์ข้อยกเว้นไปยังฟังก์ชันการพิมพ์เพื่อแสดงข้อความแสดงข้อผิดพลาดเริ่มต้นได้
+
+                        <span class="image main"><img src="images/groospay3.PNG" alt="" /></span>
+                        <strong>THE ELSE CLAUSE</strong>
+                        try/except อาจรวมถึงประโยคทางเลือกอื่น ซึ่งปรากฏต่อท้ายประโยคยกเว้นทั้งหมด
+                        <ul>
+                            <li>สอดคล้องกับลองและยกเว้นข้อ</li>
+                            <li>Syntax: คล้ายกับประโยคอื่นในโครงสร้างการตัดสินใจ</li>
+                            <li>Else suite:บล็อกของคำสั่งที่ดำเนินการหลังจากคำสั่งในชุดทดลอง
+                                เฉพาะในกรณีที่ไม่มีการยกข้อยกเว้น </li>
+                            <li>หากยกข้อยกเว้นชุดอื่นจะถูกข้าม</li>
+                        </ul>
+                        <span class="image main"><img src="images/sale report4.PNG" alt="" /></span>
+                        <strong>THE FINALLY CLAUSE</strong>
+                        • try/except คำสั่งอาจรวมถึงประโยค finally ตัวเลือกซึ่งปรากฏหลังจากทั้งหมด
+
+                        the except clauses<br>
+
+                        Aligned with try and except clauses
+
+                        •General format:<br>
+
+                        •finally:
+
+                        statements<br>
+
+                        Finally suite: block of statements after the finally clause<br>
+
+                        •ดำเนินการไม่ว่าจะมีข้อยกเว้นเกิดขึ้นหรือไม่<br>
+
+                        •จุดประสงค์คือทำการล้างข้อมูลก่อนออก
+                        <span class="image main"><img src="images/try.PNG" alt="" /></span>
+                        <span class="image main"><img src="images/tryex.PNG" alt="" /></span>
+                </p></span></p>
+                <button onclick="myFunctioncc()" id="hef">Read more</button>
+
+                <script>
+                    function myFunctioncc() {
+                        var dots = document.getElementById("abcd");
+                        var moreText = document.getElementById("efg");
+                        var btnText = document.getElementById("hef");
+
+                        if (dots.style.display === "none") {
+                            dots.style.display = "inline";
+                            btnText.innerHTML = "Read more";
+                            moreText.style.display = "none";
+                        } else {
+                            dots.style.display = "none";
+                            btnText.innerHTML = "Read less";
+                            moreText.style.display = "inline";
+                        }
+                    }
+                </script>
+            </div>
+        </section>
+
 
         <section>
             <header>
@@ -27,7 +419,7 @@
             <div class="content">
                 <p><strong>Lists ในภาษา Python</strong> ในบทนี้ คุณจะได้เรียนรู้เกี่ยวกับโครงสร้างข้อมูลแบบ List
                     ในภาษา Python เราจะพูดถึงการสร้างและใช้งาน List ในเบื้องต้น
-                    การใช้งานเมธอดและฟังก์ชันเพื่อจัดการข้อมูลภายใน List และการใช้งานคำสั่ง For loop กับ List
+                    การใช้งานเมธอดและฟังก์ชันเพื่อจัด<span id="a">...</span><span id="e">การข้อมูลภายใน List และการใช้งานคำสั่ง For loop กับ List
                     รวมถึงการ slicing<br>
                     List (ลิสต์) คือโครงสร้างข้อมูลชนิดหนึ่งในภาษา Python ที่ใช้เก็บข้อมูลแบบลำดับ (Sequence)
                     โดยมี
@@ -239,7 +631,26 @@
                             Slice เพื่อแยกข้อมูลจาก Tuple เดิมให้เป็นอันใหม่ เราได้แนะนำให้คุณรู้จักกับเมธอดใน
                             Tuple
                             พร้อมทั้งตัวอย่างการใช้งาน และ built-in functions ของ Tuple
-                </p>
+               </p></span></p>
+                <button onclick="myFunctionbb()" id="g">Read more</button>
+
+                <script>
+                    function myFunctionbb() {
+                        var dots = document.getElementById("a");
+                        var moreText = document.getElementById("e");
+                        var btnText = document.getElementById("g");
+
+                        if (dots.style.display === "none") {
+                            dots.style.display = "inline";
+                            btnText.innerHTML = "Read more";
+                            moreText.style.display = "none";
+                        } else {
+                            dots.style.display = "none";
+                            btnText.innerHTML = "Read less";
+                            moreText.style.display = "inline";
+                        }
+                    }
+                </script>
             </div>
         </section>
         <div>
@@ -253,7 +664,7 @@
             <div class="content">
                 <p><strong>Dictionary ในภาษา Python</strong>ในบทนี้ คุณจะได้เรียนรู้เกี่ยวกับโครงสร้างข้อมูล
                     Dictionary ในภาษา Python เราจะแนะนำให้คุณรู้จักกับ Dictionary คืออะไร
-                    และการประกาศและใช้งานสำหรับเก็บข้อมูลในการเขียนโปรแกรม นอกจากนี้
+                    และการประกาศและใช้งานสำหรับเก็บข้อมูลในการเขียนโ<span id="1">...</span><span id="2">ปรแกรม นอกจากนี้
                     เรายังจะพูดถึงการใช้งานเมธอดและ built-in functions ของ Dictionary
                     และตัวอย่างการใช้งานกับการเขียนโปรแกรมในรูปแบบต่างๆ ในภาษา Python
                     Dictionary คือประเภทข้อมูลที่เก็บข้อมูลในรูปแบบคู่ของ Key และ Value โดยที่ Key ใช้สำหรับเป็น
@@ -327,7 +738,26 @@
                     เราได้แสดงให้เห็นถึงการเข้าถึงข้อมูลภายใน Dictionary แบบพื้นฐานและด้วยการใช้คำสั่งวนซ้ำ For
                     loop
                     รวมถึงการใช้งานเมธอดและฟังก์ชันสำหรับจัดการ Dictionary
-                </p>
+                </p></span></p>
+                <button onclick="myFunctionaa()" id="3">Read more</button>
+
+                <script>
+                    function myFunctionaa() {
+                        var dots = document.getElementById("1");
+                        var moreText = document.getElementById("2");
+                        var btnText = document.getElementById("3");
+
+                        if (dots.style.display === "none") {
+                            dots.style.display = "inline";
+                            btnText.innerHTML = "Read more";
+                            moreText.style.display = "none";
+                        } else {
+                            dots.style.display = "none";
+                            btnText.innerHTML = "Read less";
+                            moreText.style.display = "inline";
+                        }
+                    }
+                </script>
             </div>
         </section>
         <!--section-->
@@ -338,7 +768,7 @@
             <div class="content">
                 <p><strong>INSTALLATION</strong><br>
                     พิมพ์ใน Terminal - pip3 install pgzero
-                    วิธีนำมาใช้และตรวจสอบว่าใช้ได้ไหม <span class="image main"><img src="images/first.PNG"
+                    วิธีนำมาใช้และตรวจสอบว่าใช้<span id="z">...</span><span id="x">ได้ไหม <span class="image main"><img src="images/first.PNG"
                             alt="" /></span>
                     Ex1 <span class="image main"><img src="images/py.PNG" alt="" /></span>
                     <span class="image main"><img src="images/py2.PNG" alt="" /></span>
@@ -358,13 +788,32 @@
                     <span class="image main"><img src="images/coin8.PNG" alt="" /></span>
                     <span class="image main"><img src="images/coin9.PNG" alt="" /></span>
                     <span class="image main"><img src="images/try.PNG" alt="" /></span>
-        <span class="image main"><img src="images/tryex.PNG" alt="" /></span>
+                    <span class="image main"><img src="images/tryex.PNG" alt="" /></span>
 
-                </p>
+                </p></span></p>
+                <button onclick="myFunctional()" id="n">Read more</button>
+
+                <script>
+                    function myFunctional() {
+                        var dots = document.getElementById("z");
+                        var moreText = document.getElementById("x");
+                        var btnText = document.getElementById("n");
+
+                        if (dots.style.display === "none") {
+                            dots.style.display = "inline";
+                            btnText.innerHTML = "Read more";
+                            moreText.style.display = "none";
+                        } else {
+                            dots.style.display = "none";
+                            btnText.innerHTML = "Read less";
+                            moreText.style.display = "inline";
+                        }
+                    }
+                </script>
             </div>
         </section>
 
-        
+
     </div>
 
     <head>
@@ -402,9 +851,9 @@
         <h2>previous page</h2>
 
         <a href="repair.html" class="previous">&laquo; Previous</a>
-        <a href="lec07-09.html" class="previous">&laquo; 
+        <a href="lec07-09.html" class="previous">&laquo;
             back to home page</a>
-        
+
         <!-- Elements -->
         <!--
 					<section>
@@ -674,77 +1123,40 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 				-->
 
         <!-- Section -->
-        <section>
-            <header>
-                <h2>Get in touch</h2>
-            </header>
-            <div class="content">
-                <p><strong>Auctor commodo</strong> interdum et malesuada fames ac ante ipsum primis in faucibus.
-                    Pellentesque venenatis dolor imperdiet dolor mattis sagittis.</p>
-                <form>
-                    <div class="fields">
-                        <div class="field half">
-                            <input type="text" name="name" id="name" placeholder="Name" />
-                        </div>
-                        <div class="field half">
-                            <input type="email" name="email" id="email" placeholder="Email" />
-                        </div>
-                        <div class="field">
-                            <textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
-                        </div>
-                    </div>
-                    <ul class="actions">
-                        <li><input type="submit" value="Send Message" class="button primary" /></li>
-                    </ul>
-                </form>
-            </div>
-            <footer>
-                <ul class="items">
-                    <li>
-                        <h3>Email</h3>
-                        <a href="#">information@untitled.ext</a>
-                    </li>
-                    <li>
-                        <h3>Phone</h3>
-                        <a href="#">(000) 000-0000</a>
-                    </li>
-                    <li>
-                        <h3>Address</h3>
-                        <span>1234 Somewhere Road, Nashville, TN 00000</span>
-                    </li>
-                    <li>
-                        <h3>Elsewhere</h3>
-                        <ul class="icons">
-                            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a>
-                            </li>
-                            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
-                            </li>
-                            <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a>
-                            </li>
-                            <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a>
-                            </li>
-                            <li><a href="#" class="icon brands fa-codepen"><span class="label">Codepen</span></a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </footer>
+
+        <li>
+            <h3>Elsewhere</h3>
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a>
+                </li>
+                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
+                </li>
+                <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a>
+                </li>
+                <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a>
+                </li>
+                <li><a href="#" class="icon brands fa-codepen"><span class="label">Codepen</span></a></li>
+            </ul>
+        </li>
+        </ul>
+        </footer>
         </section>
 
         <!-- Copyright -->
         <div class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5
                 UP</a>.</div>
 
-    </div>
+        </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
 
-</body>
+    </body>
 
 </html>
